@@ -1,0 +1,2 @@
+2017-10-08 20:45:23 - PHP Warning:  file_get_contents(admin/controller/extension/module/product_tabs.json): failed to open stream: No such file or directory in /home/topgrain/public_html/system/library/themeoptions.php on line 8
+2017-10-08 20:45:23 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/topgrain/public_html/system/framework.php:42) in /home/topgrain/public_html/system/library/response.php on line 12
