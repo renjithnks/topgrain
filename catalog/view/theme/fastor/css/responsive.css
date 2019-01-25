@@ -1443,7 +1443,7 @@
 		/* @group Block */
 		
 		.responsive .box {
-			margin-top: 18px;
+			margin-top: 0;
 		}
 		
 		     .responsive .col-sm-3 .box-no-advanced.box .box-content, 

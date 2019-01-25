@@ -17,14 +17,14 @@
 						     $nthumb = str_replace(HTTP_SERVER, "", $nthumb);
 						     $image_size = getimagesize($nthumb); ?>
 						     <!-- Header Left -->
-						     <div class="col-sm-4" id="header-left" style="min-width: <?php echo $image_size[0]+55; ?>px">
+                                                     <div class="col-sm-4 col-lg-3" id="header-left" style="min-width: <?php echo $image_size[0]+55; ?>px">
 						          <!-- Logo -->
 						          <div class="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
 						     </div>
 						     <?php } ?>
 						     
 							<!-- Header Left -->
-							<div class="col-sm-4" id="header-center">
+							<div class="col-sm-4  col-lg-5" id="header-center">
 	                                    <?php 
 	                                    $menu = $modules_old_opencart->getModules('menu');
 	                                    if( count($menu) ) { ?>
@@ -52,7 +52,7 @@
 							</div>
 							
 							<!-- Header Right -->
-							<div class="col-sm-4" id="header-right">
+							<div class="col-sm-4  col-lg-4" id="header-right">
 							     <?php 
 							     $top_block = $modules_old_opencart->getModules('top_block');
 							     if( count($top_block) ) { 
@@ -119,14 +119,14 @@
 						     $nthumb = str_replace(HTTP_SERVER, "", $nthumb);
 						     $image_size = getimagesize($nthumb); ?>
 						     <!-- Header Left -->
-						     <div class="col-sm-4" id="header-left" style="min-width: <?php echo $image_size[0]+55; ?>px">
+						     <div class="col-sm-4 col-lg-3" id="header-left" style="min-width: <?php echo $image_size[0]+55; ?>px">
 						          <!-- Logo -->
 						          <div class="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
 						     </div>
 						     <?php } ?>
 						     
 							<!-- Header Left -->
-							<div class="col-sm-4" id="header-center">
+							<div class="col-sm-4 col-lg-5" id="header-center">
                                         <?php 
                                         $menu = $modules_old_opencart->getModules('menu');
                                         if( count($menu) ) { ?>
@@ -154,7 +154,7 @@
 							</div>
 							
 							<!-- Header Right -->
-							<div class="col-sm-4" id="header-right">
+							<div class="col-sm-4 col-lg-4" id="header-right">
 							     <?php 
 							     $top_block = $modules_old_opencart->getModules('top_block');
 							     if( count($top_block) ) { 

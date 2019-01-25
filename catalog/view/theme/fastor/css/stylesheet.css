@@ -2152,7 +2152,7 @@ header {
 }
 
      .header-type-3 #top .pattern > .container {
-          padding-bottom: 28px;
+          padding-bottom: 15px;
      }
 
      .header-type-3 #header-left {
@@ -2173,11 +2173,10 @@ header {
           
      .header-type-3 #header-center {
           display: table-cell;
-          width: 100%;
           float: none;
           vertical-align: top;
           position: static;
-          padding-top: 30px;
+          padding-top: 0;
      }
      
           .megamenu-type-8 .header-type-3 #header-center {
@@ -2233,7 +2232,7 @@ header {
                     }
                
                     .header-type-3 #header-center .horizontal ul.megamenu > li > a {
-                         padding-top: 6px;
+                         padding-top: 0;
                          height: 51px;
                     }
                     
@@ -21553,33 +21552,43 @@ body[class*="product-category-"].show-vertical-megamenu-category-page #main .fix
 
 @media only screen and (min-width:992px) {
         
-.standard-body .fixed-header {position: static;}    
+/*.standard-body .fixed-header {position: static;}    */
     
-#header-center {display: block;float: right;width: auto;padding-top: 0;}
+.header-type-3 #header-left {display:block; float:left;}
+.header-type-3 #header-center {display:block; float:left;}
+.header-type-3 #header-right {display:block; float:left;}
+
+#header-center {display: block;float: right;padding-top: 0;}
 #header-right {float: right;position: absolute;top: 0;right: 30px;} 
 #header-right .search_form i {display:none;}
-#top #header-right .search_form {background-image:url(images/search-icon.png);background-repeat: no-repeat;background-position: center;}
+#top #header-right .search_form {margin-top: 25px !important; background-image:url(images/search-icon.png);background-repeat: no-repeat;background-position: center;}
 #top #header-right .search_form:hover {background-color:#f3f3f3 !important;border:none;}
 #top #header-right .my-account i {display:none;}
-#top #header-right .my-account {background-image:url(images/myaccount-icon.png);background-repeat: no-repeat;background-position: center;}
+#top #header-right .my-account {background-image:url(images/myaccount-icon.png);background-repeat: no-repeat;background-position: center;margin-top:25px;}
 #top #header-right .my-account:hover {background-color:#f3f3f3 !important;border:none;}
 #top #header-right #cart_block i.cart-icon img {display:none;}
 #top #header-right #cart_block i.cart-icon {background-color:#f3f3f3;border:none;background-image:url(images/cart-icon.png);background-repeat: no-repeat;background-position: center;}
-
+#top #header-left .logo {padding-top:10px;}
 #top .top-bar .menu li a {color: #fff;font-size: 15px;font-family: arial;}
 
-.mobile-disabled {display:none;}
-#top #header-center .megamenu-background {margin-top: 30px;}
+.fixed-header {height:70px;}
+.fixed-header #top #header-left .logo {width: 150px;margin-top: 15px;}
+.fixed-header #top #header-center .megamenu-background {margin-top: 17px;}
+.fixed-header #top #header-right .search_form, .fixed-header #top #header-right .my-account, .fixed-header #top #cart_block {margin-top: 22px !important;}
+ 
+
+/*.mobile-disabled {display:none;}*/
+#top #header-center .megamenu-background {margin-top: 7px;}
 .megamenu-wrapper ul.megamenu > li {float:right;}
 .megamenu-wrapper ul.megamenu > li:nth-child(2) {margin-right: 0 !important;}
-.megamenu-wrapper ul.megamenu > li > a strong {font-family: arial;font-weight: normal !important;font-size: 22px;color: #444;}
-
+.megamenu-wrapper ul.megamenu > li > a strong {font-family: arial;font-weight: normal !important;font-size: 20px;color: #444;}
+.megamenu-wrapper ul.megamenu > li > a {padding-bottom: 0; line-height: 51px !important;}
 
 
 /* temporary disabled  */
-#top #header-right #cart_block {margin-left:15px !important;}
+/*#top #header-right #cart_block {margin-left:15px !important;}
 #top #cart_block .cart-heading .cart-count {display:none;}
-#top #cart_block .cart-heading p {display:none;}
+#top #cart_block .cart-heading p {display:none;}*/
 
 
 }
