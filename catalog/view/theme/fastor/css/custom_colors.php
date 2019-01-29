@@ -96,7 +96,7 @@
 		<?php if($theme_options->get( 'product_hover_border_color' ) != '') { ?>
 		.product-grid .product:hover:before,
 		.product-list > div:hover {
-			border-color: <?php echo $theme_options->get( 'product_hover_border_color' ); ?>;
+			
 		}
 		<?php } ?>
 		
@@ -634,7 +634,6 @@
 		.product-block .title-block,
 		.refine_search,
 		.market-products-categories > ul > li > a {
-			border-bottom-color: <?php echo $theme_options->get( 'box_heading_border_bottom_color' ); ?>;
 		}
 		<?php } ?>
 		
@@ -3386,8 +3385,6 @@
 		.popup h4,
 		.product-info .product-name a,
 		legend {
-			font-size: <?php echo $theme_options->get( 'headlines_px' ); ?>px;
-			font-weight: <?php echo $theme_options->get( 'headlines_weight' )*100; ?> !important;
 			<?php if( $theme_options->get( 'headlines' ) != '' && $theme_options->get( 'headlines' ) != 'standard' ) { ?>
 			font-family: <?php echo $theme_options->get( 'headlines' ); ?>;
 			<?php } ?>
