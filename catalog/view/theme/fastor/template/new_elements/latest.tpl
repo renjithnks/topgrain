@@ -17,13 +17,13 @@ $config = $registry->get('config');
 						$image_swap = $theme_options->productImageSwap($product['product_id'], $image_size[0], $image_size[1]);
 						if($image_swap != '') echo '<img src="' . $image_swap . '" alt="' . $product['name'] . '" class="swap-image" />';
 					} ?> 
+				<span class="view-product">View Product</span>
+				</a>
 					<?php if($theme_options->get( 'lazy_loading_images' ) != '0') { ?>
 					<img src="image/catalog/blank.gif" data-echo="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" class="<?php if($theme_options->get( 'product_image_effect' ) == '2') { echo 'zoom-image-effect'; } ?>" />
 					<?php } else { ?>
 					<img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" class="<?php if($theme_options->get( 'product_image_effect' ) == '2') { echo 'zoom-image-effect'; } ?>" />
 					<?php } ?>
-				<span class="view-product">View Product</span>
-				</a>
 			</div>
 		<?php } else { ?>
 			<div class="image">
