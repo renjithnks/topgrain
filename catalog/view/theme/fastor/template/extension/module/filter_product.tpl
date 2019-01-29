@@ -127,7 +127,7 @@ $('#tab<?php echo $id; ?> a').click(function (e) {
 		  </script>
 		  <?php } ?>
 			
-		  <div class="box-heading"><?php echo $tab['heading']; ?></div>
+		  <div class="box-heading"><?php echo $tab['heading']; ?></div>		  
 		  <div class="strip-line"></div>
 		  <div class="clear"></div>
 		  <div class="box-content products">
