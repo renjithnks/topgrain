@@ -1,5 +1,9 @@
 .gitignore.txt
 config.php
 .htaccess
+<<<<<<< HEAD
 /nbproject/private/
 /nbproject
+=======
+system/*
+>>>>>>> 4103ca1a9bc040cc3a19907234c8842ed8991cd1
