@@ -65,7 +65,8 @@ if(count($tabs) > 1 ) {
 					<div class="carousel-inner">
 						<?php $i = 0; $row_fluid = 0; foreach ($tab['products'] as $product) { $row_fluid++; ?>
 			    			<?php if($i == 0) { echo '<div class="active item"><div class="product-grid"><div class="row">'; } ?>
-			    			<?php $r=$row_fluid-floor($row_fluid/$all)*$all; if($row_fluid>$all && $r == 1) { echo '</div></div></div><div class="item"><div class="product-grid"><div class="row">'; } else { $r=$row_fluid-floor($row_fluid/$row)*$row; if($row_fluid>$row && $r == 1) { echo '</div><div class="row">'; } } ?>
+			    			<?php $r=$row_fluid-floor($row_fluid/$all)*$all; if($row_fluid>$all && $r == 1) { echo '</div></div></div><div class="item">
+							   <div class="container123"><div class="product-grid"><div class="row">'; } else { $r=$row_fluid-floor($row_fluid/$row)*$row; if($row_fluid>$row && $r == 1) { echo '</div><div class="row">'; } } ?>
 			    			<div class="col-sm-<?php echo $class; ?> col-xs-6 <?php if($class == 2) { echo 'col-md-25 col-lg-2 col-sm-3 '; } if($class == 2 && $r == 0) { echo 'hidden-md hidden-sm'; } if($class == 2 && $r == 5) { echo 'hidden-sm'; } ?> <?php if($class == 25) { echo 'col-md-25 col-lg-25 col-sm-3 '; } if($class == 25 && $r == 0) { echo 'hidden-sm'; } ?>">
 			    				<?php 
 			    					if( $tabs[0]['title'] == 'most_viewed') {
@@ -76,7 +77,7 @@ if(count($tabs) > 1 ) {
 			    					?>
 			    			</div>
 						<?php $i++; } ?>
-						<?php if($i > 0) { echo '</div></div></div>'; } ?>
+						<?php if($i > 0) { echo '</div></div></div></div>'; } ?>
 					</div>
 				</div>
 			</div>
@@ -132,7 +133,7 @@ $('#tab<?php echo $id; ?> a').click(function (e) {
     		<!-- Carousel items -->
     		<div class="carousel-inner">
     			<?php $i = 0; $row_fluid = 0; $item = 0; foreach ($tab['products'] as $product) { $row_fluid++; ?>
-	    			<?php if($i == 0) { $item++; echo '<div class="active item"><div class="product-grid"><div class="row">'; } ?>
+	    			<?php if($i == 0) { $item++; echo '<div class="active item"><div class="container"><div class="product-grid"><div class="row">'; } ?>
 	    			<?php $r=$row_fluid-floor($row_fluid/$all)*$all; if($row_fluid>$all && $r == 1) { if($carousel != '0') { echo '</div></div></div><div class="item"><div class="product-grid"><div class="row">'; $item++; } else { echo '</div><div class="row">'; } } else { $r=$row_fluid-floor($row_fluid/$row)*$row; if($row_fluid>$row && $r == 1) { echo '</div><div class="row">'; } } ?>
 	    			<div class="col-sm-<?php echo $class; ?> col-xs-6 <?php if($class == 2) { echo 'col-md-25 col-lg-2 col-sm-3 '; } if($class == 2 && $r == 0) { echo 'hidden-md hidden-sm'; } if($class == 2 && $r == 5) { echo 'hidden-sm'; } ?> <?php if($class == 25) { echo 'col-md-25 col-lg-25 col-sm-3 '; } if($class == 25 && $r == 0) { echo 'hidden-sm'; } ?>">
 	    				<?php 
@@ -144,7 +145,7 @@ $('#tab<?php echo $id; ?> a').click(function (e) {
 	    				?>
 	    			</div>
     			<?php $i++; } ?>
-    			<?php if($i > 0) { echo '</div></div></div>'; } ?>
+    			<?php if($i > 0) { echo '</div></div></div></div>'; } ?>
     		</div>
 		</div>
     </div>
