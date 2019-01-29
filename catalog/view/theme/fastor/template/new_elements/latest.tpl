@@ -22,8 +22,8 @@ $config = $registry->get('config');
 					<?php } else { ?>
 					<img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" class="<?php if($theme_options->get( 'product_image_effect' ) == '2') { echo 'zoom-image-effect'; } ?>" />
 					<?php } ?>
-				</a>
 				<span class="view-product">View Product</span>
+				</a>
 			</div>
 		<?php } else { ?>
 			<div class="image">
