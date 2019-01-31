@@ -21856,7 +21856,7 @@ line-height: normal;}
 .new-arrivals-section ul li {width: 24%;}
 .new-arrivals-section .title::before {width: 9%;}
 
-
+.container.fef-section {padding-left:30px; padding-right:30px;margin-top: 30px;}
 .fef-section ul li {font-size: 24px;
     padding: 0;
 width: 33%;
