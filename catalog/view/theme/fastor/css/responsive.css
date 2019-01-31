@@ -988,14 +988,14 @@
      }
      
           .responsive #main .product-grid .row > div.col-xs-6 .product:after {
-               content: '';
+/*               content: '';
                position: absolute;
                top: 0;
                left: -30px !important;
                right: -30px !important;
                height: 1px;
                background: url(../img/bg-megamenu.png) top left repeat-x;
-               display: block !important;
+               display: block !important;*/
           }
 
                .responsive #main .product-grid .row > div.col-xs-6:first-child .product:after {
