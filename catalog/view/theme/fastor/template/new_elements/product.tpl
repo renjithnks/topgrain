@@ -6,7 +6,8 @@ $config = $registry->get('config');
 <!-- Product -->
 <div class="product clearfix product-hover">
 	<div class="left">
-		<?php if ($product['thumb']) { ?>
+		<?php 
+		if ($product['thumb']) { ?>
 			<?php if($product['special'] && $theme_options->get( 'display_text_sale' ) != '0') { ?>
 				<?php $text_sale = 'Sale';
 				if($theme_options->get( 'sale_text', $config->get( 'config_language_id' ) ) != '') {
@@ -73,7 +74,12 @@ $config = $registry->get('config');
 			<?php echo $product['price']; ?>
 			<?php } else { ?>
 			<span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
-			 <span class="price-discount">(65%)</span>
+			<?php 
+				 $discount = (filter_var($product['price'], FILTER_SANITIZE_NUMBER_INT) - filter_var($product['special'], FILTER_SANITIZE_NUMBER_INT)) / filter_var($product['price'], FILTER_SANITIZE_NUMBER_INT);
+				 $discount_percentage = round($discount * 100) ; 
+			?>
+			
+			 <span class="price-discount">(<?php echo $discount_percentage ; ?> %)</span>
 			<?php } ?>
 		</div>
 		<?php } ?>
