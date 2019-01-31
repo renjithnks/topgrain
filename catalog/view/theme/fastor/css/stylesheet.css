@@ -2177,6 +2177,7 @@ header {
           vertical-align: top;
           position: static;
           padding-top: 0;
+          z-index: 100;
      }
      
           .megamenu-type-8 .header-type-3 #header-center {
@@ -4958,11 +4959,14 @@ header {
 			position: relative;
 		}
 		
-		     .product-grid-type-8 .product-grid .product {
-		          padding-left: 0px;
-		          padding-right: 0px;
-                          background-color: #f0efef;
-		     }
+.product-grid-type-8 .product-grid .product {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
+        background-color:#eae8e8;
+        margin-bottom:10px;
+}
 		     
 		     .product-grid-type-6 .product-grid .product {
 		          padding-top: 29px;
@@ -5083,17 +5087,17 @@ header {
                          background: none;
                     }
 		
-				.product-grid .product-hover .only-hover {
-					visibility: hidden;
-					position: absolute;
-					left: 2px;
-					right: 2px;
-					bottom: 2px;
-					padding: 65px 0px 42px 0px;
-					text-align: center;
-					opacity: 0;
-					font-family: Poppins;
-				}
+.product-grid .product-hover .only-hover {
+	visibility: hidden;
+	position: absolute;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+	padding: 65px 0px 42px 0px;
+	text-align: center;
+	opacity: 0;
+	font-family: Poppins;
+}
 				
 				     .product-grid-type-2 .product-grid .product-hover .only-hover {
 				          padding-bottom: 25px;
@@ -5104,7 +5108,7 @@ header {
 				     }
 				     
 				     .product-grid-type-8 .product-grid .product-hover .only-hover {
-
+padding-bottom: 27px;
 				     }
 				
 					.product-grid .product-hover:hover .only-hover {
@@ -5348,8 +5352,8 @@ header {
 			     }
 			     
 			     .product-grid-type-8 .product-grid .product .name {
-			          padding-bottom: 1px;
-                                  display: inline-block;
+padding-top: 18px;
+padding-bottom: 1px;
 			     }
 			     
 			          .product-grid-type-8 .product-grid .product .name a {
@@ -5374,7 +5378,6 @@ header {
 				color: #d9121f;
 				font-size: 14px;
 				font-weight: 600;
-                                display: inline-block;
 			}
 			
 			     .product-grid .product-hover:hover .price {
@@ -5401,22 +5404,22 @@ header {
 				padding-top: 1px;
 			}
 			
-			.product-grid .product .only-hover ul {
-				list-style: none;
-				margin: 0px;
-				padding: 0px;
-				position: absolute;
-				transform: scale(0);
-				-moz-transform: scale(0);
-				-webkit-transform: scale(0);
-				opacity: 0;
-				transition: all 0.3s ease-out;
-				-webkit-transition: all 0.3s ease-out;
-				-moz-transition: all 0.3s ease-out;
-				width: 100%;
-				top: 10px;
-				left: 0;
-			}
+.product-grid .product .only-hover ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	transform: scale(0);
+	-moz-transform: scale(0);
+	-webkit-transform: scale(0);
+	opacity: 0;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	width: 100%;
+	top: 10px;
+	left: 0;
+}
 			
 			     .product-grid .product:hover .only-hover ul {
 			          transform: scale(1);
@@ -5425,11 +5428,11 @@ header {
 			          opacity: 1;
 			     }
 			
-			     .product-grid .product .only-hover ul li {
-			          display: inline-block;
-			          padding: 5px 1px 5px 0px;
-			          vertical-align: top;
-			     }
+.product-grid .product .only-hover ul li {
+	display: inline-block;
+	padding: 5px 1px 5px 0px;
+	vertical-align: top;
+}
 			     
 			          .product-grid .product .only-hover ul li a {
 			               display: block;
@@ -21716,7 +21719,7 @@ width: 100%;
 float: left;
 margin-right: 10px;}
 .new-arrivals-section ul li img {float:left;width:100%;}
-.new-arrivals-section .product-grid [class^='col'] {padding-left:5px; padding-right:5px;margin-bottom: 10px;}
+.new-arrivals-section .product-grid [class^='col'] {padding-left:5px; padding-right:5px;}
 .new-arrivals-section .product-grid .product:hover a {opacity:0.7;}
 .new-arrivals-section .product-grid .product a {position: absolute;left: 0;top: 0;width: 100%;height: 100%;background-color: #333;opacity: 0;}
 .new-arrivals-section .product-grid .product a .view-product {position: absolute;color: #fff;border: 2px solid #fff;padding: 5px 10px;left: 50%;top: 45%;transform: translate(-50%);}
@@ -21742,66 +21745,9 @@ right: 10px;}
 
 
 /* featured products */
-.featured-products-section {text-align: center;}
+.featured-products-section {text-align: center;margin-bottom: 30px;}
 .featured-products-section .box-heading {font-family:arial;position: relative;font-weight: bold;font-size: 20px;margin-bottom: 25px;}
 .featured-products-section .title:before {content:'';height: 2px;background-color: #555;position: absolute;width: 20%;left: 0;right: 0;text-align: center;margin: auto;bottom: -8px;}
-.featured-products-section .description {margin-bottom:20px;}
-.featured-products-section ul {margin:0;padding:0;}
-.featured-products-section ul li {position: relative;
-list-style: none;
-margin-bottom: 10px;
-display: inline-block;
-width: 100%;
-margin-right: 10px;
-background-color: #f0eeef;
-height: auto;
-}
-.featured-products-section ul li img {float:left;width:100%;}
-.featured-products-section ul li a {left: 0;top: 0;position: absolute;width: 100%;height: 100%;}
-.featured-products-section ul li a:hover {color:#333;}
-.featured-products-section ul li .price-box p {display:inline-block;font-size: 17px;margin-left: 5px;margin-right: 5px;font-weight: normal;} 
-.featured-products-section ul li .product-description {position: absolute;bottom: 0;width: 100%;}
-.featured-products-section ul li .price-box .price-old {text-decoration-line: line-through;color: #999;}
-.featured-products-section ul li .price-box .percentage {color: #cb4046}
-
-.featured-products-section ul li .cart-description {position: absolute;
-bottom: 10px;
-text-align: center;
-display: inline-block;
-margin: auto;
-left: 0;
-right: 0;
-opacity: 0;
-}
-.featured-products-section ul li .cart-description > div {display: inline-block;margin-left:5px;margin-right:5px;}
-.featured-products-section ul li .cart-description .cart-icon {position:relative;border: 2px solid #777;border-radius: 100%;width:37px; height:37px;background-image:url(images/featured-cart-icon.png);background-repeat: no-repeat;background-position: center;}
-.featured-products-section ul li .cart-description .cart-icon .add-to-cart {position: absolute;
-top: -31px;
-left: -26px;
-right: 0;
-font-size: 10px;
-width: 75px;
-text-align: center;
-display: inline-block;
-background-color: #333;
-color: #fff;
-padding: 3px;
-border-radius: 20px;display:none;}
-.featured-products-section ul li .cart-description .cart-icon:hover .add-to-cart {display:block;}
-.featured-products-section ul li .cart-description .cart-icon .add-to-cart .pointer {   width: 6px;
-height: 6px;
-position: absolute;
-top: 19px;
-background: #333;
-transform: rotate(45deg);
-left: 50%;}
-.featured-products-section ul li .cart-description .cart-icon .add-to-cart:hover .pointer {opacity:1;}
-
-.featured-products-section ul li .cart-description .free-return {border: 2px solid #777;border-radius: 100%;width:37px; height:37px;background-image:url(images/featured-free-return.png);background-repeat: no-repeat;background-position: center;}
-.featured-products-section ul li .cart-description .wishlist {border: 2px solid #777;border-radius: 100%;width:37px; height:37px;background-image:url(images/featured-wish-list.png);background-repeat: no-repeat;background-position: center;}
-.featured-products-section ul li:hover .product-description {opacity:0;}
-.featured-products-section ul li:hover .cart-description {opacity:1;}
-.featured-products-section .product-grid [class^='col'] {padding-left:5px; padding-right:5px;margin-bottom: 10px;}
 
 
 .home-about-section {background-image:url(images/home-about-bg.jpg);background-repeat: no-repeat;background-position: center;height: 350px;}
@@ -21920,8 +21866,9 @@ line-height: 160px;
 }
 
 .featured-products-section .box-heading {font-size: 40px;}
-.featured-products-section ul li {width: 45px; height:45px;}
 .featured-products-section .box-heading::before {display:none;}
+.featured-products-section .product-grid [class^='col']{padding-left:5px;padding-right:5px;}
+
 
 .home-about-section {height: 500px;
 
