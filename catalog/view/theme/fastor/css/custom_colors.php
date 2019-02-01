@@ -2025,7 +2025,7 @@
 		
 		<?php if($theme_options->get( 'breadcrumb_heading_border_bottom_color' ) != '') { ?>
 		.breadcrumb .container h1 {
-			border-bottom-color: <?php echo $theme_options->get( 'breadcrumb_heading_border_bottom_color' ); ?>;
+			border-bottom-color: #555;
 		}
 		<?php } ?>
 		
@@ -2405,7 +2405,7 @@
 		<?php if($theme_options->get( 'tabs_link_active_border_bottom_color' ) != '') { ?>
 		.htabs a.selected:before,
 		.filter-product .filter-tabs ul > li.active > a:before {
-			background: <?php echo $theme_options->get( 'tabs_link_active_border_bottom_color' ); ?>;
+			background: #555;
 		}
 		<?php } ?>
 		
@@ -2722,7 +2722,7 @@
 		
 		<?php if($theme_options->get( 'buttons_background_color' ) != '') { ?>
 		.button, .btn {
-			background: <?php echo $theme_options->get( 'buttons_background_color' ); ?> !important;
+			background: #555 !important;
 		}
 		<?php } ?>
 		
