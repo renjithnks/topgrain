@@ -5,10 +5,6 @@ $config = $registry->get('config');
 
 <!-- Product -->
 <div class="product clearfix product-hover ">
-	<div class="left">
-		<?php if ($product['thumb']) { ?>
-			
-			<div class="image <?php if($theme_options->get( 'product_image_effect' ) == '1') { echo 'image-swap-effect'; } ?>">
 				<a href="<?php echo $product['href']; ?>">
 					<?php if($theme_options->get( 'product_image_effect' ) == '1') {
 						$nthumb = str_replace(' ', "%20", ($product['thumb']));
@@ -19,6 +15,10 @@ $config = $registry->get('config');
 					} ?> 
 				<span class="view-product">View Product</span>
 				</a>
+	<div class="left">
+		<?php if ($product['thumb']) { ?>
+			
+			<div class="image <?php if($theme_options->get( 'product_image_effect' ) == '1') { echo 'image-swap-effect'; } ?>">
 					<?php if($theme_options->get( 'lazy_loading_images' ) != '0') { ?>
 					<img src="image/catalog/blank.gif" data-echo="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" class="<?php if($theme_options->get( 'product_image_effect' ) == '2') { echo 'zoom-image-effect'; } ?>" />
 					<?php } else { ?>
