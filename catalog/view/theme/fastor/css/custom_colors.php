@@ -2722,7 +2722,7 @@
 		
 		<?php if($theme_options->get( 'buttons_background_color' ) != '') { ?>
 		.button, .btn {
-			background: #555 !important;
+			background: #333 !important;
 		}
 		<?php } ?>
 		
