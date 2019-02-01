@@ -62,7 +62,7 @@
 		.today-deals-computer6-products .price,
 		.holidays-products .product .right .price,
 		.today-deals-computer6-products .countdown-section {
-			color: <?php echo $theme_options->get( 'body_price_text' ); ?>;
+			color: #555;
 		}
 		<?php } ?>
 		
@@ -76,7 +76,7 @@
 		.today-deals-shoes3-products .price .price-old,
 		.today-deals-computer8-products .price .price-old,
 		.today-deals-computer6-products .price .price-old {
-			color: <?php echo $theme_options->get( 'body_price_old_text' ); ?>;
+			color:#999;
 		}
 		<?php } ?>
 		
@@ -140,7 +140,7 @@
 		.today-deals-toys2-products .only-hover ul li a:hover,
 		.today-deals-petshop2-products .only-hover ul li a:hover,
 		.flower-product .right ul li a:hover {
-			background-color: <?php echo $theme_options->get( 'products_buttons_hover_background_color' ); ?>;
+			background-color: #d7d5d5;
 		}
 		<?php } ?>
 		
@@ -151,7 +151,7 @@
 		.today-deals-toys2-products .only-hover ul li a:hover,
 		.today-deals-petshop2-products .only-hover ul li a:hover,
 		.flower-product .right ul li a:hover {
-			border-color: <?php echo $theme_options->get( 'products_buttons_hover_border_color' ); ?>;
+			border-color: transparent;
 		}
 		<?php } ?>
 		
@@ -162,7 +162,7 @@
 		.today-deals-toys2-products .only-hover ul li a:hover,
 		.today-deals-petshop2-products .only-hover ul li a:hover,
 		.flower-product .right ul li a:hover {
-			color: <?php echo $theme_options->get( 'products_buttons_hover_icon_color' ); ?>;
+			color: #555;
 		}
 		<?php } ?>
 		
@@ -1642,7 +1642,7 @@
 		body[class*="product-category-"].show-vertical-megamenu-category-page #main .megamenu-background .vertical .megamenuToogle-wrapper,
 		body[class*="product-product-"].show-vertical-megamenu-product-page #main .megamenu-background .vertical .megamenuToogle-wrapper,
 		.common-home.show-vertical-megamenu #main .slideshow-modules .vertical .megamenuToogle-wrapper {
-			background-color: <?php echo $theme_options->get( 'vertical_menu_heading_hover_background_color' ); ?> !important;
+			background-color: #666 !important;
 		}
 		<?php } ?>
 		
@@ -1652,13 +1652,7 @@
 		body[class*="product-category-"].show-vertical-megamenu-category-page #main .megamenu-background .vertical .megamenuToogle-wrapper,
 		body[class*="product-product-"].show-vertical-megamenu-product-page #main .megamenu-background .vertical .megamenuToogle-wrapper,
 		.common-home.show-vertical-megamenu #main .slideshow-modules .vertical .megamenuToogle-wrapper {
-			background: <?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_bottom_color' ); ?>; /* Old browsers */
-			background: -moz-linear-gradient(top, <?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_bottom_color' ); ?> 0%, <?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_top_color' ); ?> 0%, <?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_bottom_color' ); ?> 99%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,<?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_bottom_color' ); ?>), color-stop(0%,<?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_top_color' ); ?>), color-stop(99%,<?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_bottom_color' ); ?>)); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top, <?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_bottom_color' ); ?> 0%,<?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_top_color' ); ?> 0%,<?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_bottom_color' ); ?> 99%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top, <?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_bottom_color' ); ?> 0%,<?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_top_color' ); ?> 0%,<?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_bottom_color' ); ?> 99%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(top, <?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_bottom_color' ); ?> 0%,<?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_top_color' ); ?> 0%,<?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_bottom_color' ); ?> 99%); /* IE10+ */
-			background: linear-gradient(to bottom, <?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_bottom_color' ); ?> 0%,<?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_top_color' ); ?> 0%,<?php echo $theme_options->get( 'vertical_menu_heading_hover_background_gradient_bottom_color' ); ?> 99%); /* W3C */
+			background-color:#666;
 		}
 		<?php } ?>
 		
@@ -1823,24 +1817,12 @@
 		
 		<?php if($theme_options->get( 'mobile_menu_heading_background_gradient_top_color' ) != '' && $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ) != '') { ?>
 		.megamenuToogle-wrapper {
-			background: <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?>; /* Old browsers */
-			background: -moz-linear-gradient(top, <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 0%, <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_top_color' ); ?> 0%, <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 99%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?>), color-stop(0%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_top_color' ); ?>), color-stop(99%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?>)); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top, <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 0%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_top_color' ); ?> 0%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 99%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top, <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 0%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_top_color' ); ?> 0%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 99%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(top, <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 0%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_top_color' ); ?> 0%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 99%); /* IE10+ */
-			background: linear-gradient(to bottom, <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 0%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_top_color' ); ?> 0%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 99%); /* W3C */
+			background-color:#666;
 		}
 		
 		     <?php if($theme_options->get( 'megamenu_type' ) == '26') { ?>
 		          .megamenuToogle-wrapper {
-		          	background: <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_top_color' ); ?>; /* Old browsers */
-		          	background: -moz-linear-gradient(top,  <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_top_color' ); ?> 50%, <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 100%); /* FF3.6+ */
-		          	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_top_color' ); ?>), color-stop(100%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?>)); /* Chrome,Safari4+ */
-		          	background: -webkit-linear-gradient(top,  <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_top_color' ); ?> 50%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 100%); /* Chrome10+,Safari5.1+ */
-		          	background: -o-linear-gradient(top,  <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_top_color' ); ?> 50%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 100%); /* Opera 11.10+ */
-		          	background: -ms-linear-gradient(top,  <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_top_color' ); ?> 50%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 100%); /* IE10+ */
-		          	background: linear-gradient(to bottom,  <?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_top_color' ); ?> 50%,<?php echo $theme_options->get( 'mobile_menu_heading_background_gradient_bottom_color' ); ?> 100%); /* W3C */
+		          	background-color:#666;
 		          }
 		     <?php } ?>
 		<?php } ?>
@@ -1860,7 +1842,7 @@
 		<?php if($theme_options->get( 'mobile_menu_heading_hover_background_color' ) != '') { ?>
 		.megamenuToogle-wrapper:hover,
 		.active .megamenuToogle-wrapper {
-			background-color: <?php echo $theme_options->get( 'mobile_menu_heading_hover_background_color' ); ?>;
+			background-color: #666;
 		}
 		<?php } ?>
 		
@@ -2668,7 +2650,7 @@
 		
 		<?php if($theme_options->get( 'sale_background_color' ) != '') { ?>
 		.sale {
-			background: <?php echo $theme_options->get( 'sale_background_color' ); ?>;
+			background: #777;
 		}
 		<?php } ?>
 		
@@ -3708,7 +3690,7 @@
 	<?php } ?>
 	
 	<?php if($theme_options->get( 'mobile_menu_navigation_background_background' ) == '2') { ?> 
-	.megamenuToogle-wrapper { background-image:url(image/<?php echo $theme_options->get( 'mobile_menu_navigation_background' ); ?>) !important;background-repeat: repeat;background-position: top left; }
+	.megamenuToogle-wrapper { background-color:#777; !important;background-repeat: repeat;background-position: top left; }
 	<?php } ?>
 	
 	<?php if($theme_options->get( 'new_label_background_background' ) == '2') { ?> 

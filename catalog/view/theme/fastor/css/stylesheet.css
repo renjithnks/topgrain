@@ -97,7 +97,7 @@ body .fixed-body {
 
 .standard-body .full-width .container {
 	max-width: 1230px;
-	margin: 0px auto;
+	margin: -1px auto 0px auto;
 	padding-left: 45px;
 	padding-right: 45px;
 }
@@ -5097,6 +5097,7 @@ header {
 	text-align: center;
 	opacity: 0;
 	font-family: Poppins;
+        z-index: 110;
 }
 				
 				     .product-grid-type-2 .product-grid .product-hover .only-hover {
@@ -5352,8 +5353,8 @@ padding-bottom: 27px;
 			     }
 			     
 			     .product-grid-type-8 .product-grid .product .name {
-padding-top: 18px;
-padding-bottom: 1px;
+                                padding-top: 10px;
+                                padding-bottom: 6px;
 			     }
 			     
 			          .product-grid-type-8 .product-grid .product .name a {
@@ -5441,8 +5442,8 @@ padding-bottom: 1px;
 			               border-radius: 100px;
 			               -webkit-border-radius: 100px;
 			               -moz-border-radius: 100px;
-			               background: #fff;
-			               border: 1px solid #ccc;
+			               background: #eae8e8;
+			               border: 1px solid #555;
 			               transition: all 0.2s ease-in;
 			               -webkit-transition: all 0.2s ease-in;
 			               -moz-transition: all 0.2s ease-in;
@@ -21570,12 +21571,11 @@ body[class*="product-category-"].show-vertical-megamenu-category-page #main .fix
 #top #header-left .logo {padding-top:10px;}
 #top .top-bar .menu li a {color: #fff;font-size: 15px;font-family: arial;}
 
-.fixed-header {height:70px;}
+.fixed-header {height:70px;box-shadow: 1px 1px 15px rgba(0,0,0,0.2);}
 .fixed-header #top #header-left .logo {width: 150px;margin-top: 15px;}
 .fixed-header #top #header-center .megamenu-background {margin-top: 17px;}
 .fixed-header #top #header-right .search_form, .fixed-header #top #header-right .my-account, .fixed-header #top #cart_block {margin-top: 22px !important;}
  
-
 /*.mobile-disabled {display:none;}*/
 #top #header-center .megamenu-background {margin-top: 7px;}
 .megamenu-wrapper ul.megamenu > li {float:right;}
@@ -21743,12 +21743,17 @@ right: 10px;}
 .furniture-contact.fashion6-contact {display:none;}
 .fef-section {margin-top: 35px;margin-bottom: 30px;}
 
-
 /* featured products */
 .featured-products-section {text-align: center;margin-bottom: 30px;}
 .featured-products-section .box-heading {font-family:arial;position: relative;font-weight: bold;font-size: 20px;margin-bottom: 25px;}
 .featured-products-section .title:before {content:'';height: 2px;background-color: #555;position: absolute;width: 20%;left: 0;right: 0;text-align: center;margin: auto;bottom: -8px;}
 
+.product-grid-type-8 .product-grid .product > a {width:100%; height:100%;left:0;top:0;position:absolute;z-index:100;}
+.product-grid-type-8 .product-grid .product .sale {max-width: 65px;left: 0;right: 0;margin-left: auto;margin-right: auto;}
+.product-grid-type-8 .product-grid .product .right .price-discount {font-weight:normal;color:#cb4045;}
+.product-grid .product .price .price-new {margin-right: 7px;}
+.footer .container [class^='col-sm'] {color:#dedede;}
+.footer .container [class^='col-sm'] img {max-width: 200px;}
 
 .home-about-section {background-image:url(images/home-about-bg.jpg);background-repeat: no-repeat;background-position: center;height: 350px;}
 .home-about-section .title {font-family:arial;color:#fff;font-size: 40px;text-align: center;font-weight: 600;position: relative;
@@ -21766,7 +21771,6 @@ margin-bottom: 50px;}
 	bottom: -8px;
 }
 
-
 .home-about-section .description {text-align: center; color:#fff;
 font-size: 17px;
 font-family: arial;
@@ -21777,7 +21781,6 @@ line-height: 20px;}
 .home-about-section .btn-wrapper .btn-more {padding:6px;background-color:#dfdfdf;padding-left: 10px;
 padding-right: 10px;}
 .home-about-section .contant-block {position:relative;margin-top: 190px;}
-
 
 
 .home-contact-section {background-color:#e6e7e8;padding-top: 70px;padding-bottom: 70px;}
@@ -21859,7 +21862,7 @@ line-height: normal;}
 .container.fef-section {padding-left:30px; padding-right:30px;margin-top: 30px;}
 .fef-section ul li {font-size: 24px;
 padding: 0;
-width: 33%;
+width: 33.33%;
 float: left;
 min-height: 160px;
 line-height: 160px;
@@ -21878,6 +21881,8 @@ line-height: 160px;
 @media only screen and (min-width:1199px) {
 .new-arrivals-section .carousel-inner .container {padding-left:40px; padding-right:40px;}  
 .new-arrivals-section .box-heading {margin-bottom: 45px;}
+.container.fef-section {padding-left: 30px;padding-right: 30px;margin-top: 40px;}
+.box.featured-products-section {margin-bottom: 60px;}
 
 }
 
