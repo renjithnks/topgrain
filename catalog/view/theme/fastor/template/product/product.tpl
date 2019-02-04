@@ -207,11 +207,12 @@ include('catalog/view/theme/'.$config->get('theme_' . $config->get('config_theme
 			        <?php if ($manufacturer) { ?>
 			        <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
 			        <?php } ?>
-			        <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
-			        <?php if ($reward) { ?>
+			        <span><?php echo $text_model; ?></span> <?php echo $heading_title . ' ' . $model; ?><br />
+			      <!--  <?php if ($reward) { ?>
 			        <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
 			        <?php } ?>
-			        <span><?php echo $text_stock; ?></span> <?php echo $stock; ?></div>
+			        <span><?php echo $text_stock; ?></span> <?php echo $stock; ?>  -->
+			      </div>
 			      <?php if ($price) { ?>
 			      <div class="price">
 			        <?php if($theme_options->get( 'display_specials_countdown' ) == '1' && $special) { $countdown = rand(0, 5000)*rand(0, 5000); 
@@ -231,12 +232,17 @@ include('catalog/view/theme/'.$config->get('theme_' . $config->get('config_theme
 			        <?php } ?>
 			        <?php if (!$special) { ?>
 			        <span class="price-new"><span itemprop="price" id="price-old"><?php echo $price; ?></span></span>
-			        <?php } else { ?>
-			        <span class="price-new"><span itemprop="price" id="price-special"><?php echo $special; ?></span></span> <span class="price-old" id="price-old"><?php echo $price; ?></span>
+			        <?php } else { 
+			        
+				 $discount = (filter_var($price, FILTER_SANITIZE_NUMBER_INT) - filter_var($special, FILTER_SANITIZE_NUMBER_INT)) / filter_var($price, FILTER_SANITIZE_NUMBER_INT);
+				 $discount_percentage = round($discount * 100) ; 
+			        
+			        ?>
+			        <span class="price-new"><span itemprop="price" id="price-special"><?php echo $special; ?></span></span> <span class="price-old" id="price-old"><?php echo $price; ?></span> <span class="price-discount"> DISCOUNT <?php echo $discount_percentage ; ?> % </span>
 			        <?php } ?>
 			        <br />
 			        <?php if ($tax) { ?>
-			        <span class="price-tax"><?php echo $text_tax; ?> <span id="price-tax"><?php echo $tax; ?></span></span><br />
+			    <!--    <span class="price-tax"><?php echo $text_tax; ?> <span id="price-tax"><?php echo $tax; ?></span></span><br /> -->
 			        <?php } ?>
 			        <?php if ($points) { ?>
 			        <span class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></span><br />
