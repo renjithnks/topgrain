@@ -21755,7 +21755,7 @@ right: 10px;}
 .footer .container [class^='col-sm'] {color:#dedede;}
 .footer .container [class^='col-sm'] img {max-width: 200px;}
 
-.home-about-section {background-image:url(images/home-about-bg.jpg);background-repeat: no-repeat;background-position: center;height: 350px;}
+.home-about-section {background-image:url(images/home-about-bg.jpg);background-repeat: no-repeat;background-position: center;height: 350px; background-size: cover;}
 .home-about-section .title {font-family:arial;color:#fff;font-size: 40px;text-align: center;font-weight: 600;position: relative;
 margin-bottom: 50px;}
 .home-about-section .title::before {

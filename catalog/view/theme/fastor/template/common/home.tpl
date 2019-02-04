@@ -15,7 +15,7 @@ $modules_old_opencart = new Modules($registry); ?>
 	<div class="background">
 		<div class="shadow"></div>
 		<div class="pattern">
-			<div class="container">
+			<div class="container-fluid">
 				<?php 
 				$preface_left = $modules_old_opencart->getModules('preface_left');
 				$preface_right = $modules_old_opencart->getModules('preface_right');
