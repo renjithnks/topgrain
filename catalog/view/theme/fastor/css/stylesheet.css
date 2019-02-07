@@ -21887,5 +21887,16 @@ line-height: 160px;
 }
 
 
+.product_detail_page_details .product_detail_page_name {
+	font-size: 30px;
+	line-height: 35px;
+	text-decoration: underline;
+}
+
+
+.product_detail_page_details .price .price-new {
+	font-size: 38px;
+	font-weight: 700 !important;
+}
 
 /* igments css -ends */

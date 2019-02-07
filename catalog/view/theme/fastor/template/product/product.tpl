@@ -203,16 +203,17 @@ include('catalog/view/theme/'.$config->get('theme_' . $config->get('config_theme
 			      </div>
 			      <?php } ?>
 			      
-			      <div class="description">
+			      <div class="product_detail_page_details">
 			        <?php if ($manufacturer) { ?>
 			        <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
 			        <?php } ?>
-			        <span><?php echo $text_model; ?></span> <?php echo $heading_title . ' ' . $model; ?><br />
+			       <!-- <span><?php echo $text_model; ?></span>  -->
+			        <div class="product_detail_page_name"><?php echo $heading_title . ' ' . $model; ?></div><br />
 			      <!--  <?php if ($reward) { ?>
 			        <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
 			        <?php } ?>
 			        <span><?php echo $text_stock; ?></span> <?php echo $stock; ?>  -->
-			      </div>
+			     
 			      <?php if ($price) { ?>
 			      <div class="price">
 			        <?php if($theme_options->get( 'display_specials_countdown' ) == '1' && $special) { $countdown = rand(0, 5000)*rand(0, 5000); 
@@ -258,7 +259,7 @@ include('catalog/view/theme/'.$config->get('theme_' . $config->get('config_theme
 			      </div>
 			      <?php } ?>
 			     </div>
-			     
+			   </div> <!-- <div class="product_detail_page_details"> -->
 			     <div id="product">
 			      <?php $product_options_center = $modules_old_opencart->getModules('product_options_center'); ?>
 			      <?php if ($options || count($product_options_center)) { ?>

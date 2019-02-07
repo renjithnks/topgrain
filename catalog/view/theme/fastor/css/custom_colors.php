@@ -3562,8 +3562,8 @@
 		<?php } ?>
 		
 		.product-info .price .price-new {
-			font-size: <?php echo $theme_options->get( 'custom_price_px' ); ?>px;
-			font-weight: <?php echo $theme_options->get( 'custom_price_weight' )*100; ?> !important;
+/*			font-size: <?php echo $theme_options->get( 'custom_price_px' ); ?>px;
+			font-weight: <?php echo $theme_options->get( 'custom_price_weight' )*100; ?> !important; */
 		}
 		
 		.product-list .name-actions > .price {
