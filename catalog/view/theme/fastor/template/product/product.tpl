@@ -239,7 +239,10 @@ include('catalog/view/theme/'.$config->get('theme_' . $config->get('config_theme
 				 $discount_percentage = round($discount * 100) ; 
 			        
 			        ?>
-			        <span class="price-new"><span itemprop="price" id="price-special"><?php echo $special; ?></span></span> <span class="price-old" id="price-old"><?php echo $price; ?></span> <span class="price-discount"> DISCOUNT <?php echo $discount_percentage ; ?> % </span>
+			        <span class="price-new">
+						<span itemprop="price" id="price-special"><?php echo $special; ?></span>
+						<span class="price-old" id="price-old"><?php echo $price; ?></span>
+					</span> <span class="price-discount"> DISCOUNT <?php echo $discount_percentage ; ?> % </span>
 			        <?php } ?>
 			        <br />
 			        <?php if ($tax) { ?>
