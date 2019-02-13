@@ -3548,7 +3548,6 @@
 		.today-deals-products .product .price,
 		.architecture-products .product .right .price,
 		.matrialarts-products .matrial-product .right .price {
-			font-size: <?php echo $theme_options->get( 'custom_price_px_small' ); ?>px;
 			font-weight: <?php echo $theme_options->get( 'custom_price_weight' )*100; ?> !important;
 		}
 		
