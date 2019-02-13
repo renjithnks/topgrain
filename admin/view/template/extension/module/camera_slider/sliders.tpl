@@ -9,7 +9,6 @@
 	    </ul>
 	  </div>
     
-    <link href='https://fonts.googleapis.com/css?family=Poppins:700,600,500,400,300' rel='stylesheet' type='text/css'>
 
 	<?php if ($error_warning) { ?>
 		<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> <?php echo $error_warning; ?>
