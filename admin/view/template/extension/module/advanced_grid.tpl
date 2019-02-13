@@ -11,7 +11,7 @@
 	  
     <link rel="stylesheet" type="text/css" href="view/stylesheet/css/colorpicker.css" />
     <script type="text/javascript" src="view/javascript/jquery/colorpicker.js"></script>  
-	<link href='https://fonts.googleapis.com/css?family=Poppins:700,600,500,400,300' rel='stylesheet' type='text/css'>
+
 	
 	<script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
 	<link href="view/javascript/summernote/summernote.css" rel="stylesheet" />

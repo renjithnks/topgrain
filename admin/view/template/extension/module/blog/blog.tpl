@@ -9,7 +9,7 @@
 	    </ul>
 	  </div>
     
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,500,400' rel='stylesheet' type='text/css'>
+
 	
 	
 	<?php if ($error_warning) { ?>
