@@ -481,6 +481,8 @@ include('catalog/view/theme/'.$config->get('theme_' . $config->get('config_theme
 <div class="links clearfix">
 <i class="fa fa-exchange" onclick="compare.add('<?php echo $product_id; ?>');"><?php if($theme_options->get( 'add_to_compare_text', $config->get( 'config_language_id' ) ) != '') { echo $theme_options->get( 'add_to_compare_text', $config->get( 'config_language_id' ) ); } else { echo ''; } ?></i>    
 <i class="fa fa-heart" onclick="wishlist.add('<?php echo $product_id; ?>');"><?php if($theme_options->get( 'add_to_wishlist_text', $config->get( 'config_language_id' ) ) != '') { echo $theme_options->get( 'add_to_wishlist_text', $config->get( 'config_language_id' ) ); } else { echo ''; } ?></i>
+
+<span><?php echo $text_stock; ?></span> <?php echo $stock; ?>
 </div>
 			         
 			        <?php if ($minimum > 1) { ?>
