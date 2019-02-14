@@ -3573,7 +3573,7 @@
 		.price-old,
 		.today-deals-products .product .price .price-old,
 		.architecture-products .product .right .price .price-old {
-			font-size: <?php echo $theme_options->get( 'custom_price_px_old_price' ); ?>px;
+			font-size: 13px;
 			font-weight: <?php echo $theme_options->get( 'custom_price_weight' )*100; ?>;
 		}
 	<?php } ?>
