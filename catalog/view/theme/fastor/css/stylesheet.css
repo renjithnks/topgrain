@@ -7400,6 +7400,7 @@ padding-bottom: 27px;
 						font-size: 12px;
 						font-weight: bold;
 						text-transform: uppercase;
+                                                text-align: center;
 					}
 								
 					.product-info .cart .add-to-cart input {
@@ -21552,6 +21553,12 @@ body[class*="product-category-"].show-vertical-megamenu-category-page #main .fix
 
 /* igments css starts */ 
 
+
+
+.body-white .standard-body .full-width .center-column .tab-content p {font-size: 14px;}
+
+
+
 @media only screen and (min-width:992px) {
         
 /*.standard-body .fixed-header {position: static;}    */
@@ -21865,11 +21872,25 @@ border:1px solid #555;
 color:#555;
 cursor: pointer;
 }
-.product-info .cart .links i:hover {
-background-color:#afafaf;   
-border:1px solid transparent;
+.product-info .cart .links i:hover {background-color:#afafaf; border:1px solid transparent;}
+.product-info .cart .add-to-cart .quantity {float: none;margin-top:10px;}
+.product-info .cart .add-to-cart .quantity input {float: none;margin: 5px auto 10px auto !important;text-align: center;}
+.product-info .cart .add-to-cart #button-cart {
+	font-size: 13px !important;
+	display: block;
+	float: none !important;
+	margin: 0 auto !important;
 }
-
+.responsive .product-info .cart .links {padding-left: 10px !important;padding-right: 10px !important;}
+.responsive .product-info .cart .links .availability-status {
+display: inline-block;
+padding: 13px 15px;
+background-color: #e1e1e1;
+margin: 0 0 0 5px;
+color: #14870e;
+font-weight: 600;
+font-size: 13px;
+}
 
 /* footer */
 .footer.full-width .background .pattern {background-color:#231f20;}
@@ -21910,7 +21931,23 @@ line-height: 160px;
 .breadcrumb .container ul li {font-size: 13px;}
 
 
+.product-info .cart .add-to-cart p {
+float: left;
+padding-top: 0;
+margin-top: 13px;    
+}
 
+.product-info .cart .add-to-cart .quantity {
+float: left;
+margin-top: 0;    
+}
+.product-info .cart .add-to-cart .quantity input {margin-top: 0 !important;}
+.product-info .cart .add-to-cart #button-cart {
+float: left !important;
+margin-left: 20px !important;    
+}
+.responsive .product-info .cart .links .availability-status {font-size: 17px; margin: 0 0 0 43px;font-weight: normal;}
+.product_detail_page_details .product_detail_page_name {margin-bottom: 20px;}
 }
 
 @media only screen and (min-width:1199px) {
